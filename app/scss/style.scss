@@ -129,6 +129,7 @@
   padding-top: 40px;
   padding-bottom: 60px;
   background-color: #191919;
+
   &__inner {
     display: flex;
     align-items: center;
@@ -191,6 +192,7 @@
     color: $accent;
     font-size: 12px;
     padding-left: 15px;
+
     &::placeholder {
       color: $accent;
       font-size: 12px;
@@ -207,6 +209,120 @@
 }
 
 
+
+
+
+.branding {
+  margin-bottom: 100px;
+  &__inner {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+&__image{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: -156px;
+  
+}
+  &__title {
+    text-transform: uppercase;
+    @extend %monserat-800;
+    font-size: 82px;
+    line-height: 77px;
+    margin-bottom: 35px;
+
+    span {
+      color: $accent;
+    }
+  }
+
+  &__text {
+    @extend %monserat-400;
+    font-size: 24px;
+    color: #A8A8A8;
+    margin-bottom: 45px;
+  }
+
+  &__link {
+    color: #1c1c1c;
+    font-size: 20px;
+    @extend %monserat-800;
+    background-color: $accent;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}
+
+.services{
+  margin-bottom: 200px;
+  &__title{
+    text-align: center;
+    @extend %monserat-700;
+    font-size: 72px;
+    span{
+      color: $accent;
+    }
+  }
+  &__text{
+    text-align: center;
+    font-size: 32px;
+    @extend %monseratalt-300;
+    color: #949494;
+    margin-bottom: 80px;  
+  }
+
+  &__item{
+    height: 405px;
+    width: 335px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  &__item-img{
+    width: 133px;
+    height: 133px;
+    object-fit: cover;
+  }
+  &__item-title{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 24px;
+    @extend %monserat-700;
+    margin-bottom: 15px;
+  }
+  &__item-text{
+  
+    @extend %monseratalt-300;
+    color: #F0F0F0;
+    margin-bottom: 20px;
+  }
+  &__item-link{
+    color: $accent;
+    @extend %monserat-500;
+    width: 150px;
+    height: 50px;
+    background-color:#171717;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 100px 30px;
+  }
+}
 
 
 
