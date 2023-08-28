@@ -16,7 +16,7 @@ $(function(){
     readOnly: true,
   });
 
-  
+  $('.shop-page__select').styler();
 
   var mixer = mixitup('.top-sale__items')
 

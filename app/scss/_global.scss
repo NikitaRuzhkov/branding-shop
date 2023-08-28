@@ -26,3 +26,40 @@ main {
   max-width: 1070px;
   margin: 0 auto;
 }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+
+  &__items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__link {
+    @extend %monserat-500;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #252525;
+  }
+  &__list--active{
+    width: 60px;
+    height: 60px;
+    background-color: $accent;
+    .pagination__link{
+      color: #000;
+      @extend %monserat-700;
+      font-size: 32px;
+    }
+  }
+}

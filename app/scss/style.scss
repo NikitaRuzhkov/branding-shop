@@ -772,14 +772,17 @@
 
 .info {
   margin-bottom: 155px;
-  &__inner{
+
+  &__inner {
     display: flex;
     justify-content: center;
   }
-  &__items{
+
+  &__items {
     display: flex;
     gap: 60px;
   }
+
   &__item {
     width: 280px;
     background-color: #1a1a1a;
@@ -787,27 +790,94 @@
     align-items: center;
     flex-direction: column;
     border-top-left-radius: 40px;
-    border-bottom-right-radius:40px;
+    border-bottom-right-radius: 40px;
     text-align: center;
   }
-  &__img{
+
+  &__img {
     margin-top: 60px;
     margin-bottom: 45px;
   }
-  &__title{
+
+  &__title {
     @extend %monserat-600;
     font-size: 32px;
     margin-bottom: 25px;
   }
-  &__text{
+
+  &__text {
     margin-bottom: 75px;
   }
-  &__link{
-   
+
+  &__link {
+
     color: #fff;
   }
 }
 
+
+.shop-page {
+  padding-top: 110px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+  }
+
+  &__option {
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__select {
+    margin-right: 25px;
+  }
+
+  &__info {
+    margin-right: 10px;
+  }
+
+  .jq-selectbox__select {
+
+    background-color: $accent;
+    display: flex;
+    align-items: center;
+    padding: 6px 37px 7px 19px;
+    color: #000;
+    position: relative;
+    clip-path: polygon(16px 0px, 2px 100%, 100% 100%, 95% 4.15%);
+
+  }
+
+  .jq-selectbox__trigger {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-image: url('../images/icons/arrow-down.svg');
+    background-repeat: no-repeat;
+    top: 13px;
+    right: 15px;
+  }
+
+  &__content {
+    display: grid;
+    grid-gap: 120px 20px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 120px;
+  }
+
+  .top-sale__item {
+    width: 260px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 
 
 
