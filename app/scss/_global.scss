@@ -52,14 +52,52 @@ main {
     height: 50px;
     background: #252525;
   }
-  &__list--active{
+
+  &__list--active {
     width: 60px;
     height: 60px;
     background-color: $accent;
-    .pagination__link{
+
+    .pagination__link {
       color: #000;
       @extend %monserat-700;
       font-size: 32px;
     }
+  }
+}
+
+.breadcrumbs {
+  padding-top: 45px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+
+  &__item {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__link {
+    @extend %monserat-300;
+    color: #A4A4A4;
+    position: relative;
+
+    &::after {
+      content: '/';
+      position: absolute;
+      top: 1px;
+      right: -10px;
+
+    }
+  }
+
+  &__link-last {
+    &::after {
+      display: none;
+    }
+  }
+
+  &__list--active {
+    color: $accent;
   }
 }
